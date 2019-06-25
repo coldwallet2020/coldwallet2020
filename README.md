@@ -4,6 +4,7 @@ Cold Storage for Bitcoin and other Cryptocurrencies
 Notice of Copyrights and Licenses:
 ---------------------------------------
 The coldwallet2020.com project, software and embedded resources are copyright coldwallet2020.com.
+
 The coldwallet2020.com name and logo are not part of the open source license.
 
 Requires
@@ -15,7 +16,9 @@ Any SQLite Manager (with encryption capability)
 Summary of licenses needed:
 
 The MBS Xojo Barcode Plugin - Get it at: https://www.monkeybreadsoftware.de/xojo/plugin-barcode.shtml
+
 The MBS Xojo Encryption Plugin - Get it at: https://www.monkeybreadsoftware.de/xojo/plugin-encryption.shtml
+
 Chilkat Xojo Plugin - Get it at: https://www.chilkatsoft.com/xojo.asp
 
 Create SQLite database name dummy.dat with the 2 tables below
