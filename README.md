@@ -1,19 +1,33 @@
 # Coldwallet2020
-Bitcoin and Altcoin Coldwallet for more than 200+ coins and tokens
+Cold Storage for Bitcoin and other Cryptocurrencies
 
 Notice of Copyrights and Licenses:
 ---------------------------------------
 The coldwallet2020.com project, software and embedded resources are copyright coldwallet2020.com.
 The coldwallet2020.com name and logo are not part of the open source license.
 
-Portions of the all-in-one HTML document contain JavaScript codes that are the copyrights of others. The individual copyrights are included throughout the document along with their licenses. Included JavaScript libraries are separated with HTML script tags.
+Requires
+---------------------------------------
+Minimum Xojo 2018r1.1
 
-Summary of JavaScript functions with a redistributable license:
-JavaScript function   License
--------------------   --------------
-MSB                   Licence
+Any SQLite Manager (with encryption capability)
 
+Summary of licenses needed:
 
+The MBS Xojo Barcode Plugin - Get it at: https://www.monkeybreadsoftware.de/xojo/plugin-barcode.shtml
+The MBS Xojo Encryption Plugin - Get it at: https://www.monkeybreadsoftware.de/xojo/plugin-encryption.shtml
+Chilkat Xojo Plugin - Get it at: https://www.chilkatsoft.com/xojo.asp
+
+Create SQLite database name dummy.dat with the 2 tables below
+---------------------------------------
+```
+CREATE TABLE [Addresses] (AID integer NOT NULL PRIMARY KEY AUTOINCREMENT,address varchar,private varchar,compress integer,date integer,type integer,amount integer NOT NULL DEFAULT 0,status integer NOT NULL DEFAULT 0,ticker varchar,coin varchar)
+```
+```
+CREATE TABLE [User] (ID integer NOT NULL PRIMARY KEY AUTOINCREMENT,encryp varchar,date integer,version varchar,status integer NOT NULL DEFAULT 0,datav varchar,lastcomp integer NOT NULL DEFAULT 0,lastp integer NOT NULL DEFAULT 5,spare1 varchar,lastcoin varchar NOT NULL DEFAULT Bitcoin,pick integer NOT NULL DEFAULT 0)
+```
+
+---------------------------------------
 The coldwallet2020.com software is available under The MIT License (MIT)
 Copyright (c) 2019 coldwallet2020.com
 
